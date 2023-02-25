@@ -38,10 +38,6 @@ module FPU(
     always @(posedge clk) begin
 
         if (status == 0 && fpu_ctl != 5'b11111) begin
-            // if (fpu_ctl == FCVTWS ||  fpu_ctl == FCVTSW) begin
-            //     stall_reg <= 0;
-            //     status <= 5;
-            // end else 
             if (fpu_ctl == FADD || fpu_ctl == FSUB || fpu_ctl == FMUL || fpu_ctl == FDIV || fpu_ctl == FADDABS || fpu_ctl == FSQRT || fpu_ctl == FCVTWS ||  fpu_ctl == FCVTSW)begin
                 status <= 1;
             end

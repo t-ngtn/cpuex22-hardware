@@ -14,10 +14,6 @@ module InstMem(
     (* ram_style = "BLOCK" *) reg [31:0] inst_ram [30000:0];
     reg [17:0] prog_idx;
 
-    // initial begin
-    //     $readmemb("C:/Users/tansei/Desktop/cpu/core/2nd/inst.dat", inst_ram);
-    // end
-
     always_ff @( posedge clk ) begin
         if (~rstn) begin
             prog_idx <= 0;
