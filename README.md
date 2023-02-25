@@ -17,3 +17,7 @@ FPGA implementation of processor for original ISA
     ├── memocon.sv            // Module connecting memory and cache
     └── SAcache4.sv           // Set Associative cache
 ```
+
+## structure
+The original CPU configuration is roughly like this.(Detailed wiring has been omitted.)
+![structure](structure.jpg)
