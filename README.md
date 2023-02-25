@@ -10,10 +10,10 @@ FPGA implementation of processor for original ISA
 │   ├── sim                   // Simulation of server.py
 │   └── uart                  // Module for UART communication
 ├── fpu                  
-│   ├── pipeline              // Pipelined FPU
+│   ├── pipeline              // Pipelined FPU (below)
 │   └── single                // Module that performs floating-point number operations in one cycle
 └── memory
     ├── cpuex2021-4-dram-main // Empty. It's my senior's. thx.
-│   ├── memocon.sv            // Module connecting memory and cache
+    ├── memocon.sv            // Module connecting memory and cache
     └── SAcache4.sv           // Set Associative cache
 ```
